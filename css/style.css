@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+    padding-top: 26px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 58px;
+    color:#AE7C78;
+}
+h1 > span {
+    font-style: italic;
+}
+h2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 48px;
+    color: #AE7C78;
+}
+h3 {
+font-family: 'Montserrat', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 29px;
+color:#AE7C78;
+}
+h4, dt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19,5px;
+    color: #AE7C78;
+}
+dd {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19,5px;
+    color: #AE7C78;
+}
+/*.menu {
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+color: #AE7C78;
+}*/
+.header {
+    border-top: 1px solid #AE7C78;
+    border-bottom: 1px solid #AE7C78;
+    height: 64px;
+}
+.nav-header {
+    position: relative;
+}
+.nav-header ul {
+    list-style-type: none;
+}
+/*.nav-header li {
+
+}*/
+a {
+    color: #AE7C78;
+    text-decoration: none;
+}
+
+.button{
+    text-decoration: none;
+    height: 80px;
+    width: 285px;
+    border-radius: 40px;
+    background: #D89999;
+    text-align: center;
+    justify-content: center;
+}
+.button a {
+    padding: 30px;
+    color: #FFFFFF;
+}
+.btn {
+    padding: 30px 105px;
+    text-decoration: none;
+    height: 80px;
+    width: 285px;
+    left: 324px;
+    top: 1231px;
+    border-radius: 40px;
+    color: #FFFFFF;
+    background: #D89999;
+}
+.steps ul {
+    list-style-type: none;
+}
+.steps p {
+    color:#AE7C78;
+    font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+}
+.news p {
+    font-family: 'Montserrat', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 29px;
+color:#AE7C78;
+}
+.cards h2 {
+    font-family: 'Playfair Display', sans-serif;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+color: #FFFFFF;
+background-color: tomato; /*потом убрать*/
+}
+.img {
+    background: url(../images/wedding.jpg);
+    width: 388px;
+    height: 442px;
+    border-radius: 10px;
+}
+.img-overlay{
+    width: 100%;
+    height: 100%;
+background: rgba(174, 124, 120, 0.6);
+border-radius: 10px;
+}
+.page-1 p {
+    font-family: 'Montserrat', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 29px;
+color: #AE7C78;
+}
+.card p {
+    font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color: #AE7C78;
+}
+.card p > span {
+    font-family: 'Montserrat', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+color: #AE7C78;
+}
+.border {
+    border: 1px solid #AE7C78; /* параметры границы */
+    background: #FFFFFF; /* цвет фона */
+    padding: 64px 129px; /* поля вокруг текста */
+   }
+.rewies p {
+    font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+color: #AE7C78;
+}
+.rewies cite {
+    font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500px;
+line-height: 20px;
+letter-spacing: 0em;
+color: #AE7C78;
+}
+   .menu li {
+    float: left;
+    margin-right: 102px;
+    margin-top: 22px;
+   }
+
+
+.menu li:nth-of-type(3){
+    margin-right: 224px;
+}
+.menu li:nth-of-type(4),
+.menu li:nth-of-type(5){
+    margin-right: 89px;
+}
+.menu li:nth-of-type(6) {
+margin-right: 0px;
+}
+.logo {
+    position: absolute;
+    top: 45%;
+    left: 46%;
+    margin-top: 16px;
+}
+.page-heading {
+    margin: 0;
+}
+
+.page-content {
+    display: grid;
+    grid-template-columns: 384px 1fr 1fr;
+    margin-top: 81px;
+    grid-template-rows: 463px;
+}
+.page-1 img {
+    margin-left: auto;
+    border-radius: 10px;
+}
+.page-1 img:nth-of-type(1) {
+    margin-top: auto;
+}
+.page-p {
+    padding-top: 24px;
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 64px;
+    margin: 0;
+    padding-top: 24px;
+}
