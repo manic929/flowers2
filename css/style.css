@@ -100,16 +100,6 @@ a {
     font-style: normal;
     font-weight: normal;
 }
-.btn {
-    padding: 30px 105px;
-    text-decoration: none;
-    height: 80px;
-    width: 285px;
-    border-radius: 40px;
-    color: #FFFFFF;
-    background: #D89999;
-    margin-top: 64px;
-}
 .steps ul {
     list-style-type: none;
 }
@@ -137,18 +127,6 @@ font-weight: 700;
 line-height: 48px;
 color: #FFFFFF;
 background-color: tomato; /*потом убрать*/
-}
-.img {
-    background: url(../images/wedding.jpg);
-    width: 388px;
-    height: 442px;
-    border-radius: 10px;
-}
-.img-overlay{
-    width: 100%;
-    height: 100%;
-background: rgba(174, 124, 120, 0.6);
-border-radius: 10px;
 }
 .page-1 p {
     font-family: 'Montserrat', sans-serif;
@@ -287,6 +265,16 @@ dd {
     margin-top: 80px;
     margin-bottom: 80px;
 }
+.btn {
+    padding: 30px 105px;
+    text-decoration: none;
+    height: 80px;
+    width: 285px;
+    border-radius: 40px;
+    color: #FFFFFF;
+    background: #D89999;
+    margin-top: 64px;
+}
 .popular-bouquets {
     margin-bottom: 36px;
     display: flex;
@@ -298,22 +286,29 @@ dd {
 .card {
     padding-left: 203px;
     padding-top: 27px;
-    float: left;
+    position: relative;
+    height: 438px;
 }
-.slide {
-    float: left;
+.card-img {
+    position: absolute;
+    left: 610px;
+    top: 5px;
+}
+.btn-text {
+    display: block;
+    margin-top: 94px;
 }
 .card p {
-    margin-top: 20px;
+    margin-top: 23px;
 }
-.card p:nth-of-type(3) {
+.card-text p:nth-of-type(3) {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
 }
-.card a {
+.card-text a {
     font-size: 16px;
     color: #FFFFFF;
     line-height: 20px;
@@ -321,9 +316,45 @@ dd {
     font-weight: normal;
     margin-top: 64px;
 }
-.slide img {
-float: right;
-margin-left: 53px;
+.flowers-option{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 105px;
+}
+.flowers-option a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+.flower-card{
+    position: relative;
+}
+
+.flower-card h2{
+    width: 350px;
+    color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+}
+.flower-card span{
+    height: 442px;
+    width: 387px;
+    position: absolute;
+    background: rgba(174, 124, 120, 0.6);
+    border-radius: 10px;
+}
+
+.flower-card p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    width: 350px;
+    color: #FFFFFF;
+    text-align: center;
+    align-items: center;
 }
 .back {
     display: flex;
@@ -332,6 +363,7 @@ margin-left: 53px;
     background: #AE7C78;
     padding-left: 102px;
     padding-top: 40px;
+    margin-top: 80px;
 }
 .back h2 {
     font-family: 'Playfair Display', sans-serif;
@@ -373,12 +405,11 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 20px;
-letter-spacing: 0em;
 text-align: center;
 color: #AE7C78;
 }
 .step img {
-    margin-bottom: 8px;
+    margin-bottom: 0;
 }
 .step h4 {
     font-family: 'Montserrat', sans-serif;
@@ -386,9 +417,104 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 20px;
+margin-bottom: 8px;
 }
+
 .rewies {
     justify-content: center;
     display: flex;
-    
+}
+.rewies cite {
+    justify-content: center;
+    display: flex;
+    font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+padding-top: 8px;
+
+}
+.steps-h2 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 36px;
+}
+.border {
+    margin-top: 80px;
+}
+/*.box {
+    display: flex;
+  justify-content: flex-end;
+}
+.one {
+    flex: 1;
+  }
+
+  .two {
+    flex: 2;
+  }
+
+  .three {
+    flex: 5;
+  }
+
+.three {
+    align-items:flex-start ;
+}*/
+.flex{
+	display: flex;
+	max-width: 700px; /* макс ширина блока */
+	margin: 0 auto; /* выравниваем блок по центру */
+	font-size: 400%;
+    align-content: flex-end;
+}
+
+.mainitem, .item{
+	flex-grow:1; /* растягивание элементов */
+	display: flex; justify-content: center; align-items: center; /* цифры по центру */
+}
+
+.mainitem{
+	min-height:300px; /* высота основного блока */
+}
+
+.sideitem{
+	/* flex:0 0 150px; */
+	flex-basis:150px; /* ширина 150 */
+	flex-shrink:0; /* Убираем уменьшение = 150 */				   
+	display: flex;
+	flex-direction: column;
+}
+
+.item{
+	flex-basis:50%;
+	min-height:150px;
+	margin-left:10px;
+}
+.item:first-child{
+    margin-bottom:20px;
+    margin-right: 20px;
+}
+.item:nth-of-type(2) {
+    margin-right: 20px;
+}
+
+/* меньше 600px */
+@media screen and (max-width: 600px) {
+	.flex{ flex-wrap: wrap; } /* для переноса */
+	
+	.sideitem{ flex-direction:row; flex-basis:100%; }
+	
+	.item{ margin-left:0; margin-top:10px; }
+	.item:first-child{ margin-bottom:0; margin-right:10px; }
+}
+
+/* меньше 450px */
+@media screen and (max-width: 450px) {
+	.sideitem{ flex-wrap: wrap; } /* разрешаем перенос */
+	.item{ flex-basis:100%; } /* на всю ширину */
+	.item:first-child{ margin-right:0; }
 }
